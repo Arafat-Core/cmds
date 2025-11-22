@@ -9,6 +9,11 @@
       "cmd": "anisearch",
       "author": "Arafat",
       "update": "23-11-2025"
+    },
+    {
+      "cmd": "imgur",
+      "author": "Arafat",
+      "update": "23-11-2025"
     }
 
   ]
