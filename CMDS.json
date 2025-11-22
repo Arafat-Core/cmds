@@ -2,6 +2,6 @@
 "prompt": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/prompt.js",
 "anisearch": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/anisearch.js",
 "imgur": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/imgur.js",
-"lrvideo": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/lyrics.js"
+"lyrics": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/lyrics.js"
   
 }
