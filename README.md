@@ -11,12 +11,12 @@ If you find any issues, feel free to report them!
 </p>
 
 <p align="center">
-  Facebook: <a href="https://www.facebook.com/arafatas602" style="color: black;">Arafat</a>
+  Facebook: <a href="https://www.facebook.com/arafatas602" style="color: black;">Arafat Sarder</a>
 </p>
 
 <p align="center">
   <a href="https://www.facebook.com/arafatas602" target="_blank" rel="noopener noreferrer">
-    <img src="https://i.imgur.com/M6xV2Np.jpeg" width="100">
+    <img src="https://i.imgur.com/kFhbHuc.jpeg" width="300">
   </a>
 </p>
 
