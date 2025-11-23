@@ -91,7 +91,7 @@ It allows users to browse commands, view details, search by name or first letter
   ├‣ Update: 23-11-2025
   ╰────────────◊
   ```
-  - Reply with 1 to get the URL for "jan".
+  - Reply with 1 to get the URL for "imgur".
 
 ## Example OutputOutput
 
