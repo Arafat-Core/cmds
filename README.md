@@ -123,3 +123,4 @@ If you find any issues, please report them!
 
 First of all, I am making this inspired by MahMUD Bhai's Command Store Hinata Store. Here, 90% credit goes to MahMUD Bhai.
 
+[**Hinata Store**](https://github.com/mahmudx7/exe)
