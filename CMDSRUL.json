@@ -44,7 +44,13 @@
       "cmd": "gofile",
       "author": "Arafat",
       "update": "23-11-2025"
+    },
+    {
+      "cmd": "pinterest",
+      "author": "Arafat",
+      "update": "23-11-2025"
     }
+
 
   ]
 }
