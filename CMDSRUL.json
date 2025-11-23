@@ -24,6 +24,11 @@
       "cmd": "gpt",
       "author": "Arafat",
       "update": "23-11-2025"
+    },
+    {
+      "cmd": "catbox",
+      "author": "Arafat",
+      "update": "23-11-2025"
     }
 
   ]
