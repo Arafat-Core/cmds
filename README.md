@@ -2,7 +2,7 @@
 src="https://i.imgur.com/kteCTlm.jpeg" alt="banner">
 
 <h1 align="center">
-  <img src="https://i.imgur.com/ZfuZrPc.jpeg" width="22px" alt="icon">
+  <img src="https://i.imgur.com/kFhbHuc.jpeg" width="22px" alt="icon">
   Arafat's GoatBot Commands Store
 </h1>
 
