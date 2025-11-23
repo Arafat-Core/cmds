@@ -82,7 +82,7 @@ It allows users to browse commands, view details, search by name or first letter
 - After running `#cmds`, reply with the command number to get its URL.
 - Example:
   ```
-  !cmds
+  #cmds
   ```
   *Bot response:*  
   ```
@@ -119,6 +119,7 @@ If you find any issues, please report them!
 
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤: <a href="https://www.facebook.com/Arafatas602" style="color: black;">Arafat</a></h3></div>
 
-##cradits
+## Cradit
 
-First of all, I am making this inspired by MahMUD Bhai's Command Store Hinata Store. Here, 90% credit goes to MahMUD Bhai. 
+First of all, I am making this inspired by MahMUD Bhai's Command Store Hinata Store. Here, 90% credit goes to MahMUD Bhai.
+
