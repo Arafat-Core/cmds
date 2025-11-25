@@ -123,8 +123,7 @@ module.exports = {
 `𝐔𝐩𝐥𝐨𝐚𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥
 𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫: ${uploaderName}
 𝐔𝐢𝐝: ${senderID}
-𝐃𝐚𝐭𝐞: ${date}
-𝐓𝐨𝐭𝐚𝐥 𝐀𝐝𝐝: ${totalNow}`;
+𝐃𝐚𝐭𝐞: ${date}`;
 
         return message.reply(msg);
 
