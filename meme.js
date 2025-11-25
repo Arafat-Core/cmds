@@ -10,11 +10,34 @@ function decode(x) {
 const DB_API = decode("aHR0cHM6Ly9tb25nb2RiLWFwaS1wc2kudmVyY2VsLmFwcC9tZW1l");
 const IMGUR_ID = decode("ZDcwMzA1ZTdjM2FjNWM2");
 
+function getText(event) {
+  return (
+    event.body ||
+    event.message?.body ||
+    event.message?.text ||
+    event.message ||
+    ""
+  )
+    .toString()
+    .trim()
+    .toLowerCase();
+}
+
+async function getName(api, uid) {
+  try {
+    if (api.getUserInfo) {
+      const info = await api.getUserInfo(uid);
+      return info?.[uid]?.name || uid;
+    }
+  } catch {}
+  return uid;
+}
+
 module.exports = {
   config: {
     name: "meme",
     aliases: ["meme"],
-    version: "22.0",
+    version: "25.0",
     author: "Arafat",
     countDown: 3,
     role: 0,
@@ -22,9 +45,10 @@ module.exports = {
   },
 
   onStart: async function ({ message, event, api }) {
-    const { body, senderID, messageReply } = event;
+    const userMessage = getText(event);
+    const { senderID, messageReply } = event;
 
-    if (body && body.toLowerCase() === "#meme list") {
+    if (userMessage === "#meme list" || userMessage === "/meme list" || userMessage === "meme list") {
       try {
         const res = await axios.get(DB_API);
         const list = res.data?.data || [];
@@ -36,14 +60,10 @@ module.exports = {
         const sorted = Object.entries(count).sort((a, b) => b[1] - a[1]);
 
         let text = "👑 𝐌𝐞𝐦𝐞 𝐋𝐞𝐚𝐝𝐞𝐫𝐛𝐨𝐚𝐫𝐝 👑\n\n";
-        let rank = 1;
 
+        let rank = 1;
         for (const [uid, total] of sorted) {
-          let name = uid;
-          try {
-            const info = await api.getUserInfo(uid);
-            name = info?.[uid]?.name || uid;
-          } catch {}
+          const name = await getName(api, uid);
 
           if (rank === 1) text += `🥇 ${name} — ${total} 𝐔𝐩𝐥𝐨𝐚𝐝𝐬\n`;
           else if (rank === 2) text += `🥈 ${name} — ${total} 𝐔𝐩𝐥𝐨𝐚𝐝𝐬\n`;
@@ -55,7 +75,6 @@ module.exports = {
 
         text += `\n🏆 𝐓𝐨𝐭𝐚𝐥 𝐌𝐞𝐦𝐞𝐬: ${list.length}`;
         return message.reply(text);
-
       } catch {
         return message.reply("𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐥𝐨𝐚𝐝 𝐥𝐞𝐚𝐝𝐞𝐫𝐛𝐨𝐚𝐫𝐝.");
       }
@@ -84,11 +103,7 @@ module.exports = {
 
         if (!link) return message.reply("𝐔𝐩𝐥𝐨𝐚𝐝 𝐅𝐚𝐢𝐥𝐞𝐝.");
 
-        let name = senderID;
-        try {
-          const info = await api.getUserInfo(senderID);
-          name = info?.[senderID]?.name || senderID;
-        } catch {}
+        const uploaderName = await getName(api, senderID);
 
         const old = await axios.get(DB_API);
         const before = old.data?.data?.length || 0;
@@ -106,7 +121,7 @@ module.exports = {
 
         const msg =
 `𝐔𝐩𝐥𝐨𝐚𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥
-𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫: ${name}
+𝐔𝐩𝐥𝐨𝐚𝐝𝐞𝐫: ${uploaderName}
 𝐔𝐢𝐝: ${senderID}
 𝐃𝐚𝐭𝐞: ${date}
 𝐓𝐨𝐭𝐚𝐥 𝐀𝐝𝐝: ${totalNow}`;
@@ -125,11 +140,7 @@ module.exports = {
 
       const pick = list[Math.floor(Math.random() * list.length)];
 
-      let uploaderName = pick.uploader;
-      try {
-        const info = await api.getUserInfo(pick.uploader);
-        uploaderName = info?.[pick.uploader]?.name || pick.uploader;
-      } catch {}
+      const uploaderName = await getName(api, pick.uploader);
 
       const uploadDate = new Date(pick.createdAt).toLocaleString("en-US", {
         timeZone: "Asia/Dhaka"
