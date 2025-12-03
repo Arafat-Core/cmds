@@ -59,6 +59,11 @@
       "cmd": "autopin",
       "author": "Arafat",
       "update": "26-11-2025"
+    },
+    {
+      "cmd": "download",
+      "author": "Arafat",
+      "update": "03-12-2025"
     }
 
 
