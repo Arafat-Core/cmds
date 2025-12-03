@@ -38,13 +38,17 @@ module.exports = {
 
     if (!supported.some(domain => url.includes(domain))) return;
 
+  
+    const cachePath = path.join(__dirname, "cache");
+    if (!fs.existsSync(cachePath)) fs.mkdirSync(cachePath);
+    
+
     try {
       const waitMsg = await api.sendMessage(
         "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐩𝐥𝐞𝐚𝐬𝐞 𝐰𝐚𝐢𝐭 𝐚 𝐟𝐞𝐰 𝐦𝐨𝐦𝐞𝐧𝐭...!!",
-        event..threadI
+        event.threadID
       );
 
-      
       const gitRaw = "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/api.json";
       const apiJson = (await axios.get(gitRaw)).data;
 
@@ -60,8 +64,8 @@ module.exports = {
       if (!data?.url) throw new Error("𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐔𝐑𝐋 𝐍𝐨𝐭 𝐅𝐨𝐮𝐧𝐝!");
 
       const videoBuffer = (await axios.get(data.url, { responseType: "arraybuffer" })).data;
+      const savePath = path.join(cachePath, `autodl_${Date.now()}.mp4`);
 
-      const savePath = path.join(__dirname, "cache", `autodl_${Date.now()}.mp4`);
       fs.writeFileSync(savePath, videoBuffer);
 
       await api.unsendMessage(waitMsg.messageID);
