@@ -1,4 +1,4 @@
-#miyo install sing.js const axios = require("axios");
+const axios = require("axios");
 const fs = require("fs");
 const ytSearch = require("yt-search");
 
