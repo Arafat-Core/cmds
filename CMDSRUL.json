@@ -64,8 +64,12 @@
       "cmd": "download",
       "author": "Arafat",
       "update": "03-12-2025"
+    },
+    {
+      "cmd": "edit",
+      "author": "Arafat",
+      "update": "08-12-2025"
     }
-
 
   ]
 }
