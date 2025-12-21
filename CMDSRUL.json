@@ -69,6 +69,11 @@
       "cmd": "edit",
       "author": "Arafat",
       "update": "08-12-2025"
+    },
+    {
+      "cmd": "tf",
+      "author": "Arafat",
+      "update": "21-12-2025"
     }
 
   ]
