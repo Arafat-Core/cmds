@@ -14,6 +14,7 @@
 "download": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/download.js",
 "edit": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/edit.js",
 "tf": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/tf.js",
-"drive": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/drive.js"
+"drive": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/drive.js",
+"removebg": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/removebg.js"
   
 }
