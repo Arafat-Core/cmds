@@ -15,6 +15,7 @@
 "edit": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/edit.js",
 "tf": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/tf.js",
 "drive": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/drive.js",
-"removebg": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/removebg.js"
+"removebg": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/removebg.js",
+"deepseek": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/deepseek.js"
   
 }
