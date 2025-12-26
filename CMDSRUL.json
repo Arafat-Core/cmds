@@ -89,7 +89,13 @@
       "cmd": "deepseek",
       "author": "Arafat",
       "update": "26-12-2025"
+    },
+    {
+      "cmd": "tiksr",
+      "author": "Arafat",
+      "update": "26-12-2025"
     }
+
 
   ]
 }
