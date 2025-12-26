@@ -84,6 +84,11 @@
       "cmd": "removebg",
       "author": "Arafat",
       "update": "23-12-2025"
+    },
+    {
+      "cmd": "deepseek",
+      "author": "Arafat",
+      "update": "26-12-2025"
     }
 
   ]
