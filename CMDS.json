@@ -17,6 +17,7 @@
 "drive": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/drive.js",
 "removebg": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/removebg.js",
 "deepseek": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/deepseek.js",
-"tiksr": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/tiksr.js"
+"tiksr": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/tiksr.js",
+"mcstatus": "https://raw.githubusercontent.com/Arafat-Core/cmds/refs/heads/main/mcstatus.js"
   
 }
