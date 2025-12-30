@@ -94,6 +94,11 @@
       "cmd": "tiksr",
       "author": "Arafat",
       "update": "26-12-2025"
+    },
+    {
+      "cmd": "mcstatus",
+      "author": "Arafat",
+      "update": "30-12-2025"
     }
 
 
