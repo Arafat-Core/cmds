@@ -99,7 +99,13 @@
       "cmd": "mcstatus",
       "author": "Arafat",
       "update": "30-12-2025"
+    },
+    {
+      "cmd": "4k",
+      "author": "Arafat",
+      "update": "08-01-2026"
     }
+
 
 
   ]
